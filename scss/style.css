@@ -14,4 +14,38 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #F9F6F6;
+  color: #32282E;
+}
+
+/*----------Header Starts Here----------*/
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 25px 8.75rem;
+  z-index: 10;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+}
+header nav .nav-links {
+  display: flex;
+  justify-content: space-around;
+  gap: 3.75rem;
+}
+header nav .nav-links li {
+  width: 9.375rem;
+  padding: 0.5rem 0;
+  text-align: center;
+  background-color: #32282E;
+  color: #F9F6F6;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+header nav .nav-links a {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
