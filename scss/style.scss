@@ -1,0 +1,22 @@
+/*----------Fonts----------*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Rye&display=swap');
+
+/*----------Colors----------*/
+$neutral-dark: #32282E;
+$neutral-light: #F9F6F6;
+$neutral-normal: #E4E4E4;
+
+/*----------Basic Scss----------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Oswald', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
