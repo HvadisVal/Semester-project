@@ -61,15 +61,17 @@ header {
         }
       }
 
-      #logo {
-        width: 100px;
-        height: 100px;
-        border-radius: 60rem;
-      }
-
       a {
         cursor: pointer;
       }
+    }
+
+    #logo {
+      width: 100px;
+      height: 100px;
+      background-color: $neutral-dark;
+      margin: 0 3.75rem;
+      border-radius: 60rem;
     }
 
     #language-selector {
@@ -84,6 +86,57 @@ header {
 
       .lang-flag {
         display: none;
+      }
+    }
+  }
+
+  /*-----Media Starts Here-----*/
+  @media (width < 1300px) {
+    & {
+      padding: 1.25rem 8.75rem;
+
+      nav {
+        .nav-links {
+          gap: 2.5rem;
+        
+
+          li {
+            width: 6.25rem;
+            font-size: 1rem;
+          }
+        }
+
+        #logo {
+          width: 75px;
+          height: 75px;
+          margin: 0 2.5rem;
+        }
+
+        #language-selector {
+          font-size: 2rem;
+          margin-bottom: 0.25rem;
+        }
+      }
+    }
+  }
+
+  @media (width < 1075px) {
+    & {
+      padding: 1.25rem 2.5rem;
+
+      nav {
+        justify-content: space-between;
+        .nav-links {
+          display: none;
+        }
+
+        #logo {
+          margin: 0;
+        }
+
+        #language-selector {
+          right: 2.5rem;
+        }
       }
     }
   }

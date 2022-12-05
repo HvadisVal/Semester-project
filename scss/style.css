@@ -26,6 +26,7 @@ header {
   right: 0;
   padding: 25px 8.75rem;
   z-index: 10;
+  /*-----Media Starts Here-----*/
 }
 header nav {
   display: flex;
@@ -56,13 +57,15 @@ header nav .nav-links li:hover {
   background-color: #F9F6F6;
   color: #32282E;
 }
-header nav .nav-links #logo {
-  width: 100px;
-  height: 100px;
-  border-radius: 60rem;
-}
 header nav .nav-links a {
   cursor: pointer;
+}
+header nav #logo {
+  width: 100px;
+  height: 100px;
+  background-color: #32282E;
+  margin: 0 3.75rem;
+  border-radius: 60rem;
 }
 header nav #language-selector {
   position: absolute;
@@ -75,4 +78,42 @@ header nav #language-selector i {
 }
 header nav #language-selector .lang-flag {
   display: none;
+}
+@media (width < 1300px) {
+  header {
+    padding: 1.25rem 8.75rem;
+  }
+  header nav .nav-links {
+    gap: 2.5rem;
+  }
+  header nav .nav-links li {
+    width: 6.25rem;
+    font-size: 1rem;
+  }
+  header nav #logo {
+    width: 75px;
+    height: 75px;
+    margin: 0 2.5rem;
+  }
+  header nav #language-selector {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+  }
+}
+@media (width < 1075px) {
+  header {
+    padding: 1.25rem 2.5rem;
+  }
+  header nav {
+    justify-content: space-between;
+  }
+  header nav .nav-links {
+    display: none;
+  }
+  header nav #logo {
+    margin: 0;
+  }
+  header nav #language-selector {
+    right: 2.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
