@@ -1,0 +1,74 @@
+:root {
+  --main-color: #624465;
+  --main-dark: #252439;
+  --main-yellow: #ffdd67;
+  --sec-dark: #302f43;
+  --white: #ffffff;
+  --text-grey: rgba(0,0,0,.5);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+  /*font-family: ;*/
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 39:40  header {
+    position: absolute;
+    top: 1rem;
+    z-index: 10;
+    display: flex;
+    padding: 1rem 2rem;
+    background: var(--main-dark) ;
+    display: flex;
+}*/
+.container {
+  margin: auto;
+  width: 75%;
+}
+
+section {
+  padding: 5rem 0rem;
+}
+
+section.about {
+  background: var(--main-color);
+}
+
+.about-wrapper {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 40% 60%;
+  grid-gap: 9rem;
+}
+
+.exp-num {
+  display: flex;
+  justify-content: center;
+}
+
+.exp-num > div {
+  background: var(--main-yellow);
+  width: auto;
+  display: inline-block;
+}
+
+.exp-num h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 25rem;
+  line-height: 25rem;
+  color: var(--main-color);
+  position: relative;
+  top: -20px;
+}
+
+/*1:14*//*# sourceMappingURL=style.css.map */
