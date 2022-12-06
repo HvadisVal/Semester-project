@@ -50,6 +50,7 @@ header {
         font-size: 1.25rem;
         font-weight: 500;
         text-transform: uppercase;
+        border: 2px solid $neutral-dark;
         border-radius: 7px;
         letter-spacing: 1px;
         transition: all .1s ease-out;
@@ -151,12 +152,32 @@ header {
   @media (width < 1075px) {
     & {
       padding: 1.25rem 2.5rem;
+      box-shadow: 0px 0px 21px -10px rgba(0,0,0,0.75);
+      -webkit-box-shadow: 0px 0px 21px -10px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 21px -10px rgba(0,0,0,0.75);
 
       nav {
         justify-content: space-between;
 
         .nav-links {
-          display: none;
+          position: absolute;
+          left: 0; top: 7rem; right: 0;
+          flex-direction: column;
+          padding: 2rem 2rem 1.5rem 2rem;
+          gap: 1.5rem;
+          transform: translateY(-500%);
+          opacity: 0;
+          transition: transform .2s ease-out, opacity .2s .1s ease-out;
+        }
+
+        .nav-two {
+          padding: 1.5rem 2rem;
+          top: 15rem;
+        }
+
+        .nav-active {
+          transform: translateY(0%);
+          opacity: 1;
         }
 
         .logo {
@@ -206,7 +227,7 @@ header {
 
   @media (width < 500px) {
     & {
-      padding: 1.25rem;
+      padding: 1rem 1.25rem;
     }
 
     nav {
