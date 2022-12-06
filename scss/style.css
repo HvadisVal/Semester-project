@@ -82,9 +82,9 @@ header nav .language-selector .lang-flag {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  transform: translateY(-4rem);
+  transform: translateY(-10rem);
   opacity: 0;
-  transition: all 0.3 ease-out;
+  transition: transform 0.2s ease-out, opacity 0.2s 0.1s ease-out;
 }
 header nav .language-selector .lang-flag a {
   font-size: 0;
@@ -119,6 +119,9 @@ header nav .language-selector .lang-flag-active {
   header nav .language-selector {
     font-size: 2rem;
     margin-bottom: 0.25rem;
+  }
+  header nav .language-selector .lang-flag {
+    right: -55%;
   }
 }
 @media (width < 1075px) {
