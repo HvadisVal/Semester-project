@@ -4,6 +4,13 @@ const navSlide = () => {
   const worldIcon = document.querySelector('.language-selector');
   const languages = document.querySelector('.lang-flag');
   
+  //Toggle Nav
+  burger.addEventListener('click', () =>{
+    nav.classList.toggle('nav-active');
+
+    //Burger Animation
+    burger.classList.toggle('burger-active');
+  });
 
   //Toggle Flags
   worldIcon.addEventListener('click', () =>{
