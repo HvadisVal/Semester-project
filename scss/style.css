@@ -138,6 +138,48 @@ header nav .language-selector .lang-flag-active {
     margin: 0;
   }
   header nav .language-selector {
+    right: 6.5rem;
+  }
+  header nav .burger {
+    position: absolute;
     right: 2.5rem;
+    padding: 0.2rem;
+    cursor: pointer;
+  }
+  header nav .burger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #32282E;
+    transition: all 0.2s ease-in-out;
+  }
+  header nav .burger-active {
+    border: 2px solid #32282E;
+    border-radius: 0.2rem;
+  }
+  header nav .burger-active div:first-child {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  header nav .burger-active div:nth-child(2) {
+    transform: translateX(-10px);
+    background: transparent;
+  }
+  header nav .burger-active div:last-child {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+@media (width < 500px) {
+  header {
+    padding: 1.25rem;
+  }
+  header nav {
+    justify-content: space-between;
+  }
+  header nav .language-selector {
+    right: 4.75rem;
+  }
+  header nav .burger {
+    right: 1.25rem;
   }
 }/*# sourceMappingURL=style.css.map */
