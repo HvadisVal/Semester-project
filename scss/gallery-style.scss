@@ -75,10 +75,11 @@ h2 {
 
 /*----------Header Starts Here----------*/
 header {
-  position: absolute;
+  position: fixed;
   left: 0; top: 0; right: 0;
   padding: 25px 8.75rem;
   z-index: 10;
+  background-color: $neutral-light;
 
   nav {
     display: flex;
