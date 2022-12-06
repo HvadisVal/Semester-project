@@ -396,7 +396,6 @@ main {
 
         .swiper-button-next {
           &::after {
-            margin-right: -10px;
             padding: 5px 10px;
             background-color: $neutral-normal;
             color: $neutral-dark;
@@ -409,7 +408,6 @@ main {
 
         .swiper-button-prev {
           &::after {
-            margin-left: -10px;
             padding: 5px 10px;
             background-color: $neutral-normal;
             color: $neutral-dark;

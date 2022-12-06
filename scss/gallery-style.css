@@ -345,7 +345,6 @@ main .content .slider .swiper .swiper-slide img {
           user-select: none;
 }
 main .content .slider .swiper .swiper-button-next::after {
-  margin-right: -10px;
   padding: 5px 10px;
   background-color: #E4E4E4;
   color: #32282E;
@@ -355,7 +354,6 @@ main .content .slider .swiper .swiper-button-next::after {
   border-radius: 3px;
 }
 main .content .slider .swiper .swiper-button-prev::after {
-  margin-left: -10px;
   padding: 5px 10px;
   background-color: #E4E4E4;
   color: #32282E;
