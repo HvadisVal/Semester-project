@@ -1,12 +1,14 @@
 const navSlide = () => {
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav-links');
+  const navTwo = document.querySelector('.nav-two');
   const worldIcon = document.querySelector('.language-selector');
   const languages = document.querySelector('.lang-flag');
   
-  //Toggle Nav
+  //Toggle Navs
   burger.addEventListener('click', () =>{
     nav.classList.toggle('nav-active');
+    navTwo.classList.toggle('nav-active');
 
     //Burger Animation
     burger.classList.toggle('burger-active');
