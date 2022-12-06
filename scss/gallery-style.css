@@ -143,13 +143,17 @@ header nav .language-selector .lang-flag-active {
     flex-direction: column;
     padding: 2rem 2rem 1.5rem 2rem;
     gap: 1.5rem;
+    background-color: #E4E4E4;
+    border-top: 4px solid #32282E;
     transform: translateY(-500%);
     opacity: 0;
     transition: transform 0.2s ease-out, opacity 0.2s 0.1s ease-out;
   }
   header nav .nav-two {
     padding: 1.5rem 2rem;
-    top: 15rem;
+    top: 15.25rem;
+    border-top: none;
+    border-bottom: 4px solid #32282E;
   }
   header nav .nav-active {
     transform: translateY(0%);
@@ -197,10 +201,23 @@ header nav .language-selector .lang-flag-active {
   header nav {
     justify-content: space-between;
   }
+  header nav .nav-links {
+    top: 6.7rem;
+  }
+  header nav .nav-two {
+    top: 14.95rem;
+  }
   header nav .language-selector {
     right: 4.75rem;
   }
   header nav .burger {
     right: 1.25rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*----------Main Starts Here----------*/
+main {
+  margin-top: 185px;
+  border-top: 4px solid #32282E;
+  border-bottom: 4px solid #32282E;
+}/*# sourceMappingURL=gallery-style.css.map */

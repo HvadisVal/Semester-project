@@ -165,6 +165,8 @@ header {
           flex-direction: column;
           padding: 2rem 2rem 1.5rem 2rem;
           gap: 1.5rem;
+          background-color: $neutral-normal;
+          border-top: 4px solid $neutral-dark;
           transform: translateY(-500%);
           opacity: 0;
           transition: transform .2s ease-out, opacity .2s .1s ease-out;
@@ -172,7 +174,9 @@ header {
 
         .nav-two {
           padding: 1.5rem 2rem;
-          top: 15rem;
+          top: 15.25rem;
+          border-top: none;
+          border-bottom: 4px solid $neutral-dark;
         }
 
         .nav-active {
@@ -233,6 +237,14 @@ header {
     nav {
       justify-content: space-between;
 
+      .nav-links {
+        top: 6.7rem;
+      }
+
+      .nav-two {
+        top: 14.95rem;
+      }
+
       .language-selector {
         right: 4.75rem;
       }
@@ -242,4 +254,11 @@ header {
       }
     }
   }
+}
+
+/*----------Main Starts Here----------*/
+main {
+  margin-top: 185px;
+  border-top: 4px solid $neutral-dark;
+  border-bottom: 4px solid $neutral-dark;
 }
