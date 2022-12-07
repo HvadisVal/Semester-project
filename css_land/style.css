@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+body .text {
+  margin-top: 150px;
+  display: flex;
+  width: 100%;
+  height: 100px;
+}
+body .text p {
+  font-size: xx-large;
+  text-shadow: 3px 2px rgba(159, 158, 158, 0.388);
+  font-weight: bold;
+}
+body .text .comp {
+  width: 50%;
+  height: 100%;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .text .comp .back1 {
+  width: 100%;
+  height: 85%;
+  background-color: rgb(228, 227, 227);
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+body .text .kids {
+  width: 50%;
+  height: 100%;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .text .kids .back2 {
+  width: 100%;
+  height: 85%;
+  background-color: rgb(228, 227, 227);
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+body .list {
+  display: flex;
+  height: 500px;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+body .list .first {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 3px dotted black;
+}
+body .list .first form input,
+body .list .first form textarea {
+  width: 400px;
+  border: 2px solid black;
+  font-size: large;
+  padding: 10px;
+}
+body .list .first form #Number {
+  width: 210px;
+}
+body .list .first form #sendBtn {
+  background-color: #752F2D;
+  margin-left: 50px;
+  color: white;
+  border: 0;
+  padding: 10px;
+  width: 120px;
+  border-radius: 5%;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: pointer;
+}
+body .list .first form #sendBtn:hover {
+  background-color: #ce5854;
+}
+body .list .second {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .list .second form input,
+body .list .second form textarea {
+  width: 400px;
+  border: 2px solid black;
+  font-size: large;
+  padding: 10px;
+}
+body .list .second form #Number {
+  width: 210px;
+}
+body .list .second form #sendBtn {
+  background-color: #752F2D;
+  margin-left: 50px;
+  color: white;
+  border: 0;
+  padding: 10px;
+  width: 120px;
+  border-radius: 5%;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: pointer;
+}
+body .list .second form #sendBtn:hover {
+  background-color: #ce5854;
+}
+body .downhorn {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-small;
+}/*# sourceMappingURL=style.css.map */

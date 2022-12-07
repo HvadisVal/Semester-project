@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/img/bbqqqq.png);
+    background-size: cover;
+    display: block;
+
+
+    .logot {
+        margin-top: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        color: grey;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .icon {
+
+        position: absolute;
+        top: 50px;
+        right: 150px;
+
+        i {
+            cursor: pointer;
+            font-size: 40px;
+            color: white;
+        }
+
+        .flags {
+            position: absolute;
+            right: -35%;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            transform: translateY(-10rem);
+            opacity: 0;
+            transition: transform 0.2s ease-out, opacity .2s .1s ease-out;
+
+            a {
+                font-size: 0;
+
+                img {
+                    width: 30px;
+                    box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.75);
+                    -webkit-box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.75);
+                    -moz-box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.75);
+                    font-size: 0.75rem;
+                }
+            }
+
+
+        }
+
+        .lang-flag-active {
+            transform: translateY(0.5rem);
+            opacity: 1;
+        }
+
+    }
+
+
+
+
+    .downtext {
+        color: #DBDBDB;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        font-size: larger;
+        text-shadow: 3px 2px rgba(159, 158, 158, 0.388);
+
+        h1 {
+            margin-top: 30px;
+        }
+
+        h2 {
+            margin-top: 5px;
+        }
+    }
+
+    form {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+
+        #langBtn {
+            background-color: #D99847;
+            color: white;
+            border: 0;
+            padding: 10px;
+            width: 120px;
+            border-radius: 5%;
+            text-transform: uppercase;
+            transition: 0.3s;
+            cursor: pointer;
+
+
+            &:hover {
+                background-color: #a26c2a;
+            }
+        }
+    }
+
+}
