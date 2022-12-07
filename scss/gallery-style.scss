@@ -6,7 +6,7 @@ $neutral-dark: #322b28;
 $neutral-light: #F9F6F6;
 $neutral-normal: #E4E4E4;
 $main-color: #752F2D;
-$main-light: #cdac99b5;
+$main-light: #cdac99;
 $main-dark: #521B00;
 
 /*----------Basic Scss----------*/
@@ -80,10 +80,10 @@ h3 {
 
 .circle {
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   border-radius: 60em;
-  border: 4px solid $neutral-dark;
+  border: 3px solid $neutral-dark;
 }
 
 .copyright {
@@ -236,10 +236,23 @@ header {
           padding: 2rem 2rem 1.5rem 2rem;
           gap: 1.5rem;
           box-shadow: 5px 0px 10px -5px $neutral-dark;
-          background-color: $neutral-light;
+          background-color: $main-color;
           transform: translateY(-500%);
           opacity: 0;
           transition: transform .2s ease-out, opacity .2s .1s ease-out;
+
+          li {
+            background-color: $neutral-light;
+            border: 2px solid $neutral-dark;
+            color: $neutral-dark;
+
+            &:hover {
+              background-color: $neutral-light;
+              border: 2px solid $neutral-dark;
+              color: $main-color;
+              font-weight: 600;
+            }
+          }
         }
 
         .nav-two {
@@ -284,6 +297,7 @@ header {
 
           & div:first-child {
             transform: rotate(-45deg) translate(-5px,6px);
+            background-color: $main-color;
           }
           
           & div:nth-child(2) {
@@ -293,6 +307,7 @@ header {
           
           & div:last-child {
             transform: rotate(45deg) translate(-5px,-6px);
+            background-color: $main-color;
           }
         }
       }
@@ -382,8 +397,8 @@ main {
       background-color: $neutral-dark;
 
       .circle {
-        top: -0.75rem;
-        margin-left: -6.5px;
+        top: -0.55rem;
+        margin-left: -4.75px;
       }
 
       .circle-bottom {

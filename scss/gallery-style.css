@@ -62,7 +62,7 @@ h3 {
   border: none;
   border-radius: 7px;
   cursor: pointer;
-  border: 2px solid rgba(205, 172, 153, 0.7098039216);
+  border: 2px solid #cdac99;
   transition: all 0.2s ease-out;
 }
 .btn:hover {
@@ -71,10 +71,10 @@ h3 {
 
 .circle {
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   border-radius: 60em;
-  border: 4px solid #322b28;
+  border: 3px solid #322b28;
 }
 
 .copyright {
@@ -210,10 +210,21 @@ header nav .language-selector .lang-flag-active {
     padding: 2rem 2rem 1.5rem 2rem;
     gap: 1.5rem;
     box-shadow: 5px 0px 10px -5px #322b28;
-    background-color: #F9F6F6;
+    background-color: #752F2D;
     transform: translateY(-500%);
     opacity: 0;
     transition: transform 0.2s ease-out, opacity 0.2s 0.1s ease-out;
+  }
+  header nav .nav-links li {
+    background-color: #F9F6F6;
+    border: 2px solid #322b28;
+    color: #322b28;
+  }
+  header nav .nav-links li:hover {
+    background-color: #F9F6F6;
+    border: 2px solid #322b28;
+    color: #752F2D;
+    font-weight: 600;
   }
   header nav .nav-two {
     padding: 1.5rem 2rem;
@@ -251,6 +262,7 @@ header nav .language-selector .lang-flag-active {
   }
   header nav .burger-active div:first-child {
     transform: rotate(-45deg) translate(-5px, 6px);
+    background-color: #752F2D;
   }
   header nav .burger-active div:nth-child(2) {
     transform: translateX(-10px);
@@ -258,6 +270,7 @@ header nav .language-selector .lang-flag-active {
   }
   header nav .burger-active div:last-child {
     transform: rotate(45deg) translate(-5px, -6px);
+    background-color: #752F2D;
   }
 }
 @media (width < 500px) {
@@ -332,8 +345,8 @@ main .content .divider {
   background-color: #322b28;
 }
 main .content .divider .circle {
-  top: -0.75rem;
-  margin-left: -6.5px;
+  top: -0.55rem;
+  margin-left: -4.75px;
 }
 main .content .divider .circle-bottom {
   top: auto;
