@@ -203,9 +203,9 @@ header {
   @media (width < 1075px) {
     & {
       padding: 1.25rem 2.5rem;
-      box-shadow: 0px 0px 21px -10px rgba(0,0,0,0.75);
-      -webkit-box-shadow: 0px 0px 21px -10px rgba(0,0,0,0.75);
-      -moz-box-shadow: 0px 0px 21px -10px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 15px -7px rgba(0,0,0,0.75);
+      -webkit-box-shadow: 0px 0px 15px -7px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 15px -7px rgba(0,0,0,0.75);
 
       nav {
         justify-content: space-between;
@@ -348,7 +348,8 @@ main {
     grid-template-columns: 1fr 0.01fr 2fr;
 
     .description {
-      padding: 9rem 6.25rem;
+      width: 21.75rem;
+      margin: 7.5rem auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -380,6 +381,9 @@ main {
       padding: 10px;
       border: 4px solid $neutral-dark;
       border-radius: 7px;
+      box-shadow: 0px 0px 15px -7px rgba(0,0,0,0.75);
+      -webkit-box-shadow: 0px 0px 15px -7px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 15px -7px rgba(0,0,0,0.75);
 
       .swiper {
         width: 100%;
@@ -424,6 +428,201 @@ main {
       }
     }
   }
+
+  /*-----Media Starts Here-----*/
+  @media (width < 1300px) {
+    & {
+      margin-top: 145px;
+
+      .content {
+        .description {
+          width: 16rem;
+        }
+          
+        .slider {
+          width: 590px;
+          height: 340px;
+        }
+      }
+    }
+  }
+
+  @media (width < 1075px) {
+    & {
+      margin-top: 115px;
+      padding-bottom: 10px;
+
+      .heading {
+        grid-template-columns: 1fr;
+    
+        .page-info {
+         display: none;
+        }
+      }
+
+      .content {
+        grid-template-columns: 1fr;
+    
+        .description {
+          width: 30.875rem;
+          margin: 3.75rem auto;
+          gap: 2.5rem;
+        }
+    
+        .divider {
+          width: 100%;
+          height: 4px;
+          margin: 0 0 10px 0;
+
+          .circle {
+            display: none;
+          }
+        }
+
+        .slider { 
+          width: 740px;
+          height: 440px;
+          margin: auto;
+          padding: 0;
+          border: none;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+
+  @media (width < 780px) {
+    & {
+      .heading {
+        .page-name {
+          padding: 18px;
+
+          i {
+            font-size: 1rem;
+          }
+
+          h1 {
+            font-size: 2rem;
+          }
+        }
+      }
+
+      .content {
+        .description {
+          width: 25.875rem;
+          
+          .info {
+            font-size: 1rem;
+          }
+
+          .btn {
+            width: 120px;
+            font-size: 1rem;
+          }
+        }
+
+        .slider { 
+          width: 600px;
+          height: 400px;
+
+          .swiper {
+            .swiper-button-next {
+              &::after {
+                padding: 4px 8px;
+                font-size: 1.25rem;
+              }
+            }
+    
+            .swiper-button-prev {
+              &::after {
+                padding: 4px 8px;
+                font-size: 1.25rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (width < 640px) {
+    & {
+
+      .content {
+        .description {
+          width: 25.875rem;
+        }
+
+        .slider { 
+          width: 500px;
+          height: 400px;
+        }
+      }
+    }
+  }
+
+  @media (width < 540px) {
+    & {
+      margin-top: 107px;
+
+      .content {
+        .description {
+          width: 20.875rem;
+        }
+
+        .slider { 
+          width: 400px;
+          height: 350px;
+        }
+      }
+    }
+  }
+
+  @media (width < 440px) {
+    & {
+      .content {
+        .description {
+          width: 15.875rem;
+        }
+
+        .slider { 
+          width: 350px;
+          height: 300px;
+
+          .swiper {
+            .swiper-button-next {
+              display: none;
+            }
+    
+            .swiper-button-prev {
+                display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (width < 380px) {
+    & {
+      .content {
+        .slider { 
+          width: 300px;
+          height: 250px;
+        }
+      }
+    }
+  }
+
+  @media (width < 315px) {
+    & {
+      .content {
+        .slider { 
+          width: 250px;
+        }
+      }
+    }
+  }
 }
 
 /*----------Footer Starts Here----------*/
@@ -433,5 +632,14 @@ footer {
   &.blur-active {
     filter: blur(2.5px);
     transition: all .2s ease-out;
+  }
+
+  /*-----Media Starts Here-----*/
+  @media (width < 540px) {
+    & {
+      .copyright {
+        font-size: 0.625rem;
+      }
+    }
   }
 }

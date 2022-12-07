@@ -178,9 +178,9 @@ header nav .language-selector .lang-flag-active {
 @media (width < 1075px) {
   header {
     padding: 1.25rem 2.5rem;
-    box-shadow: 0px 0px 21px -10px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 0px 0px 21px -10px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 21px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 15px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 15px -7px rgba(0, 0, 0, 0.75);
   }
   header nav {
     justify-content: space-between;
@@ -270,6 +270,7 @@ main {
   margin-top: 185px;
   border-top: 4px solid #32282E;
   border-bottom: 4px solid #32282E;
+  /*-----Media Starts Here-----*/
 }
 main.blur-active {
   filter: blur(2.5px);
@@ -301,7 +302,8 @@ main .content {
   grid-template-columns: 1fr 0.01fr 2fr;
 }
 main .content .description {
-  padding: 9rem 6.25rem;
+  width: 21.75rem;
+  margin: 7.5rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -329,6 +331,9 @@ main .content .slider {
   padding: 10px;
   border: 4px solid #32282E;
   border-radius: 7px;
+  box-shadow: 0px 0px 15px -7px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 15px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px -7px rgba(0, 0, 0, 0.75);
 }
 main .content .slider .swiper {
   width: 100%;
@@ -365,12 +370,146 @@ main .content .slider .swiper .swiper-button-prev::after {
 main .content .slider .swiper .swiper-pagination-bullet-active {
   background-color: #32282E;
 }
+@media (width < 1300px) {
+  main {
+    margin-top: 145px;
+  }
+  main .content .description {
+    width: 16rem;
+  }
+  main .content .slider {
+    width: 590px;
+    height: 340px;
+  }
+}
+@media (width < 1075px) {
+  main {
+    margin-top: 115px;
+    padding-bottom: 10px;
+  }
+  main .heading {
+    grid-template-columns: 1fr;
+  }
+  main .heading .page-info {
+    display: none;
+  }
+  main .content {
+    grid-template-columns: 1fr;
+  }
+  main .content .description {
+    width: 30.875rem;
+    margin: 3.75rem auto;
+    gap: 2.5rem;
+  }
+  main .content .divider {
+    width: 100%;
+    height: 4px;
+    margin: 0 0 10px 0;
+  }
+  main .content .divider .circle {
+    display: none;
+  }
+  main .content .slider {
+    width: 740px;
+    height: 440px;
+    margin: auto;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+  }
+}
+@media (width < 780px) {
+  main .heading .page-name {
+    padding: 18px;
+  }
+  main .heading .page-name i {
+    font-size: 1rem;
+  }
+  main .heading .page-name h1 {
+    font-size: 2rem;
+  }
+  main .content .description {
+    width: 25.875rem;
+  }
+  main .content .description .info {
+    font-size: 1rem;
+  }
+  main .content .description .btn {
+    width: 120px;
+    font-size: 1rem;
+  }
+  main .content .slider {
+    width: 600px;
+    height: 400px;
+  }
+  main .content .slider .swiper .swiper-button-next::after {
+    padding: 4px 8px;
+    font-size: 1.25rem;
+  }
+  main .content .slider .swiper .swiper-button-prev::after {
+    padding: 4px 8px;
+    font-size: 1.25rem;
+  }
+}
+@media (width < 640px) {
+  main .content .description {
+    width: 25.875rem;
+  }
+  main .content .slider {
+    width: 500px;
+    height: 400px;
+  }
+}
+@media (width < 540px) {
+  main {
+    margin-top: 107px;
+  }
+  main .content .description {
+    width: 20.875rem;
+  }
+  main .content .slider {
+    width: 400px;
+    height: 350px;
+  }
+}
+@media (width < 440px) {
+  main .content .description {
+    width: 15.875rem;
+  }
+  main .content .slider {
+    width: 350px;
+    height: 300px;
+  }
+  main .content .slider .swiper .swiper-button-next {
+    display: none;
+  }
+  main .content .slider .swiper .swiper-button-prev {
+    display: none;
+  }
+}
+@media (width < 380px) {
+  main .content .slider {
+    width: 300px;
+    height: 250px;
+  }
+}
+@media (width < 315px) {
+  main .content .slider {
+    width: 250px;
+  }
+}
 
 /*----------Footer Starts Here----------*/
 footer {
   margin: 1.5rem auto 1rem auto;
+  /*-----Media Starts Here-----*/
 }
 footer.blur-active {
   filter: blur(2.5px);
   transition: all 0.2s ease-out;
+}
+@media (width < 540px) {
+  footer .copyright {
+    font-size: 0.625rem;
+  }
 }/*# sourceMappingURL=gallery-style.css.map */
