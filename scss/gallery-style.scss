@@ -5,7 +5,7 @@
 $neutral-dark: #32282E;
 $neutral-light: #F9F6F6;
 $neutral-normal: #E4E4E4;
-$main-color: #752F2D;
+$main-color: #bc542f;
 
 /*----------Basic Scss----------*/
 * {
@@ -96,12 +96,12 @@ header {
         width: 7.75rem;
         padding: 0.25rem 0;
         text-align: center;
-        background-color: $neutral-dark;
+        background-color: $main-color;
         color: $neutral-light ;
         font-size: 1.25rem;
         font-weight: 500;
         text-transform: uppercase;
-        border: 2px solid $neutral-dark;
+        border: 2px solid $neutral-ligth;
         border-radius: 7px;
         letter-spacing: 1px;
         transition: all .1s ease-out;
@@ -311,7 +311,6 @@ header {
 main {
   margin-top: 185px;
   border-top: 4px solid $neutral-dark;
-  border-bottom: 4px solid $neutral-dark;
 
   &.blur-active {
     filter: blur(2.5px);
@@ -327,7 +326,7 @@ main {
       justify-content: center;
       align-items: center;
       gap: 1.875rem;
-      background-color: $neutral-dark;
+      background-color: $main-color;
       border-bottom: 4px solid $neutral-dark;
       padding: 23px;
 
