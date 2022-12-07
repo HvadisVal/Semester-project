@@ -597,6 +597,7 @@ main {
         .page-name{
           padding-left: 0.25rem;
           padding-right: 0.25rem;
+          gap: 1rem;
         }
       }
 
@@ -811,9 +812,6 @@ footer {
     & {
       .contact-container {
         margin-bottom: 1.75rem;
-
-       .social {
-       }
       }
     }
   }
