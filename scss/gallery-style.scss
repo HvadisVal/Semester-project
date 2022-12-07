@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Rye&display=swap');
 
 /*----------Colors----------*/
-$neutral-dark: #32282E;
+$neutral-dark: #322b28;
 $neutral-light: #F9F6F6;
 $neutral-normal: #E4E4E4;
-$main-color: #bc542f;
+$main-color: #752F2D;
+$main-light: #cdac99b5;
+$main-dark: #521B00;
 
 /*----------Basic Scss----------*/
 * {
@@ -39,7 +41,17 @@ h2 {
   align-items: center;
   font-size: 2rem;
   font-weight: 500;
-  background-color: $neutral-normal;
+  color: $neutral-light;
+  background-color: $main-color;
+}
+
+h3 {
+  padding-bottom: 0.625rem;
+  color: $neutral-light;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .info {
@@ -58,6 +70,12 @@ h2 {
   border: none;
   border-radius: 7px;
   cursor: pointer;
+  border: 2px solid $main-light;
+  transition: all .2s ease-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .circle {
@@ -71,6 +89,7 @@ h2 {
 .copyright {
   text-align: center;
   font-size: 0.875rem;
+  color: $neutral-normal;
 }
 
 /*----------Header Starts Here----------*/
@@ -80,6 +99,7 @@ header {
   padding: 25px 8.75rem;
   z-index: 10;
   background-color: $neutral-light;
+  box-shadow: 0 5px 10px -10px $neutral-dark;
 
   nav {
     display: flex;
@@ -101,15 +121,13 @@ header {
         font-size: 1.25rem;
         font-weight: 500;
         text-transform: uppercase;
-        border: 2px solid $neutral-ligth;
+        border: 2px solid $main-dark;
         border-radius: 7px;
         letter-spacing: 1px;
         transition: all .1s ease-out;
 
         &:hover {
-          border: 2px solid $neutral-dark;
-          background-color: $neutral-light;
-          color: $neutral-dark;
+          background-color: $main-dark;
         }
       }
 
@@ -134,6 +152,7 @@ header {
 
       i {
         cursor: pointer;
+        color: $neutral-dark;
       }
 
       .lang-flag {
@@ -216,8 +235,8 @@ header {
           flex-direction: column;
           padding: 2rem 2rem 1.5rem 2rem;
           gap: 1.5rem;
-          background-color: $neutral-normal;
-          border-top: 4px solid $neutral-dark;
+          box-shadow: 5px 0px 10px -5px $neutral-dark;
+          background-color: $neutral-light;
           transform: translateY(-500%);
           opacity: 0;
           transition: transform .2s ease-out, opacity .2s .1s ease-out;
@@ -227,7 +246,7 @@ header {
           padding: 1.5rem 2rem;
           top: 15.25rem;
           border-top: none;
-          border-bottom: 4px solid $neutral-dark;
+          box-shadow: 0 5px 10px -10px $neutral-dark;
         }
 
         .nav-active {
@@ -309,8 +328,8 @@ header {
 
 /*----------Main Starts Here----------*/
 main {
-  margin-top: 185px;
-  border-top: 4px solid $neutral-dark;
+  margin-top: 150px;
+  border-top: 2px solid $neutral-dark;
 
   &.blur-active {
     filter: blur(2.5px);
@@ -326,19 +345,19 @@ main {
       justify-content: center;
       align-items: center;
       gap: 1.875rem;
-      background-color: $main-color;
-      border-bottom: 4px solid $neutral-dark;
+      background-color: $neutral-dark;
+      border-bottom: 2px solid $neutral-dark;
       padding: 23px;
 
       i {
         font-size: 1.5rem;
-        color: $neutral-light;
+        color: $neutral-normal;
       }
     }
 
     .page-info {
       padding: 10px;
-      border-bottom: 4px solid $neutral-dark;
+      border-bottom: 2px solid $neutral-dark;
     }
   }
 
@@ -358,13 +377,13 @@ main {
 
     .divider {
       position: relative;
-      width: 4px;
+      width: 2px;
       margin: 2rem 0;
       background-color: $neutral-dark;
 
       .circle {
         top: -0.75rem;
-        margin-left: -5.5px;
+        margin-left: -6.5px;
       }
 
       .circle-bottom {
@@ -377,9 +396,6 @@ main {
       width: 740px;
       height: 440px;
       margin: auto;
-      padding: 10px;
-      border: 4px solid $neutral-dark;
-      border-radius: 7px;
       box-shadow: 0px 0px 15px -7px rgba(0,0,0,0.75);
       -webkit-box-shadow: 0px 0px 15px -7px rgba(0,0,0,0.75);
       -moz-box-shadow: 0px 0px 15px -7px rgba(0,0,0,0.75);
@@ -401,10 +417,10 @@ main {
           &::after {
             padding: 5px 10px;
             background-color: $neutral-normal;
-            color: $neutral-dark;
+            color: $main-color;
             font-size: 1.5rem;
             font-weight: 600;
-            border: 2px solid $neutral-dark;
+            border: 2px solid $main-color;
             border-radius: 3px;
           }
         }
@@ -413,16 +429,16 @@ main {
           &::after {
             padding: 5px 10px;
             background-color: $neutral-normal;
-            color: $neutral-dark;
+            color: $main-color;
             font-size: 1.5rem;
             font-weight: 600;
-            border: 2px solid $neutral-dark;
+            border: 2px solid $main-color;
             border-radius: 3px;
           }
         }
 
         .swiper-pagination-bullet-active {
-            background-color: $neutral-dark;
+            background-color: $main-color;
         }
       }
     }
@@ -626,11 +642,76 @@ main {
 
 /*----------Footer Starts Here----------*/
 footer {
-  margin: 1.5rem auto 1rem auto;
+  margin: 1.5rem auto 0 auto;
+  padding: 2rem 6.125rem 1rem 6.125rem;
+  background-image: radial-gradient($main-color, $main-dark);
 
   &.blur-active {
     filter: blur(2.5px);
     transition: all .2s ease-out;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.125rem;
+
+    .contact-wrapper {
+      width: 275x;
+      .contact {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.75rem;
+        color: $neutral-light;
+        font-size: 1.125rem;
+        margin-bottom: 0.25rem;
+
+        p {
+          font-weight: 300;
+        }
+      }
+    }
+
+    .social {
+      width: 275px;
+      text-align: center;
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0.4rem;
+        font-size: 1.5rem;
+        color: $neutral-light;
+
+        i {
+          &:hover {
+            font-size: 1.75rem;
+          }
+        }
+      }
+    }
+
+    .navigation {
+      width: 275px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        color: $neutral-light;
+        font-size: 1.125rem;
+        margin-bottom: 0.25rem;
+
+        &:hover {
+          font-size: 1.25rem;
+        }
+      }
+    }
   }
 
   /*-----Media Starts Here-----*/
