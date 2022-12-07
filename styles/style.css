@@ -71,4 +71,80 @@ section.about {
   top: -20px;
 }
 
-/*1:14*//*# sourceMappingURL=style.css.map */
+/*1:14*/
+.area {
+  background: var(--main-dark);
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 6.5rem;
+}
+
+area-desc h2 {
+  color: #fff;
+  margin-bottom: 2.5rem;
+}
+
+.area-details input[type=checkbox] {
+  display: none;
+}
+
+.area-desc p {
+  line-height: 1.7rem;
+  color: var(--text-grey);
+  margin-bottom: 1rem;
+}
+
+.area-btns {
+  margin-top: 3rem;
+}
+
+.area-btns a {
+  background: var(--text-grey);
+}
+
+.area-btns a span {
+  display: inline-block;
+  margin-left: 0.3rem;
+  font-size: 1.4rem;
+}
+
+.area-labels {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.area-labels label {
+  padding: 1rem 2rem;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.area-labels label span {
+  transform: rotate(45deg);
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+#skill:checked ~ .area-labels .skill-label {
+  border: 1px solid #fff;
+  border-radius: 15px;
+}
+
+#experience:checked ~ .area-labels .exp-label {
+  border: 1px solid #fff;
+  border-radius: 15px;
+}
+
+#education:checked ~ .area-labels .edu-label {
+  border: 1px solid #fff;
+  border-radius: 15px;
+}/*# sourceMappingURL=style.css.map */
