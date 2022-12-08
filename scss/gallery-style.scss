@@ -236,7 +236,8 @@ header {
 
         .nav-links {
           position: absolute;
-          left: 0; top: 7rem; right: 0;
+          top: 7.2rem; right: 0;
+          width: 20rem;
           flex-direction: column;
           padding: 2rem 2rem 1.5rem 2rem;
           gap: 1.5rem;
@@ -363,6 +364,14 @@ header {
 
       .burger {
         right: 1.25rem;
+      }
+    }
+  }
+
+  @media (width < 340px) {
+    nav {
+      .nav-links {
+        width: 100%;
       }
     }
   }

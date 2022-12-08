@@ -206,9 +206,9 @@ header nav .language-selector .lang-flag-active {
   }
   header nav .nav-links {
     position: absolute;
-    left: 0;
-    top: 7rem;
+    top: 7.2rem;
     right: 0;
+    width: 20rem;
     flex-direction: column;
     padding: 2rem 2rem 1.5rem 2rem;
     gap: 1.5rem;
@@ -309,6 +309,11 @@ header nav .language-selector .lang-flag-active {
   }
   header nav .burger {
     right: 1.25rem;
+  }
+}
+@media (width < 340px) {
+  header nav .nav-links {
+    width: 100%;
   }
 }
 
