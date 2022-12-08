@@ -15,25 +15,26 @@ body p {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   border-radius: 100%;
   color: grey;
   background-color: white;
   margin: 0;
   padding: 0;
+  font-size: large;
 }
-body .icon {
+body .language-selector {
   position: absolute;
   top: 50px;
-  right: 150px;
+  right: 100px;
 }
-body .icon i {
+body .language-selector i {
   cursor: pointer;
   font-size: 40px;
   color: white;
 }
-body .icon .flags {
+body .language-selector .lang-flag {
   position: absolute;
   right: -35%;
   display: flex;
@@ -43,17 +44,17 @@ body .icon .flags {
   opacity: 0;
   transition: transform 0.2s ease-out, opacity 0.2s 0.1s ease-out;
 }
-body .icon .flags a {
+body .language-selector .lang-flag a {
   font-size: 0;
 }
-body .icon .flags a img {
+body .language-selector .lang-flag a img {
   width: 30px;
   box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.75);
   font-size: 0.75rem;
 }
-body .icon .lang-flag-active {
+body .language-selector .lang-flag-active {
   transform: translateY(0.5rem);
   opacity: 1;
 }
@@ -65,7 +66,7 @@ body .downtext {
   align-items: center;
   margin: 0;
   padding: 0;
-  font-size: larger;
+  font-size: large;
   text-shadow: 3px 2px rgba(159, 158, 158, 0.388);
 }
 body .downtext h1 {
@@ -75,22 +76,85 @@ body .downtext h2 {
   margin-top: 5px;
 }
 body form {
+  margin-top: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 25px;
 }
 body form #langBtn {
-  background-color: #D99847;
+  background-color: #BC542F;
   color: white;
   border: 0;
   padding: 10px;
-  width: 120px;
-  border-radius: 5%;
+  width: 230px;
+  border-radius: 10px;
   text-transform: uppercase;
   transition: 0.3s;
   cursor: pointer;
 }
 body form #langBtn:hover {
-  background-color: #a26c2a;
+  background-color: #e86c3f;
+  transition: 0.2s;
+}
+@media screen and (width < 1075px) {
+  body {
+    background-attachment: fixed;
+    background-position: center;
+  }
+  body .logot {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .logot p {
+    font-size: small;
+  }
+  body .downtext {
+    color: #DBDBDB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: medium;
+    text-shadow: 2px 2px rgba(159, 158, 158, 0.388);
+  }
+  body .downtext h1 {
+    margin-top: 20px;
+  }
+  body .downtext h2 {
+    width: 350px;
+    text-align: center;
+  }
+  body form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  body form #langBtn {
+    background-color: #BC542F;
+    color: white;
+    border: 0;
+    padding: 10px;
+    width: 180px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  body form #langBtn:hover {
+    background-color: #e86c3f;
+    transition: 0.2s;
+  }
+  body .language-selector {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
 }/*# sourceMappingURL=style1.css.map */

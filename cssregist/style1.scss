@@ -20,21 +20,21 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100px;
-        width: 100px;
+        height: 150px;
+        width: 150px;
         border-radius: 100%;
         color: grey;
         background-color: white;
         margin: 0;
         padding: 0;
-
+        font-size: large;
     }
 
-    .icon {
+    .language-selector {
 
         position: absolute;
         top: 50px;
-        right: 150px;
+        right: 100px;
 
         i {
             cursor: pointer;
@@ -42,7 +42,7 @@ body {
             color: white;
         }
 
-        .flags {
+        .lang-flag {
             position: absolute;
             right: -35%;
             display: flex;
@@ -85,7 +85,7 @@ body {
         align-items: center;
         margin: 0;
         padding: 0;
-        font-size: larger;
+        font-size: large;
         text-shadow: 3px 2px rgba(159, 158, 158, 0.388);
 
         h1 {
@@ -98,29 +98,119 @@ body {
     }
 
     form {
-
+        margin-top: 10px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 50px;
+        gap: 25px;
 
 
         #langBtn {
-            background-color: #D99847;
+            background-color: #BC542F;
             color: white;
             border: 0;
             padding: 10px;
-            width: 120px;
-            border-radius: 5%;
+            width: 230px;
+            border-radius: 10px;
             text-transform: uppercase;
             transition: 0.3s;
             cursor: pointer;
 
 
+
             &:hover {
-                background-color: #a26c2a;
+                background-color: #e86c3f;
+                transition: 0.2s;
             }
         }
     }
 
+    @media screen and (width < 1075px) {
+
+        background-attachment: fixed;
+        background-position: center;
+
+
+        .logot {
+            margin-top: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            p {
+                font-size: small;
+            }
+        }
+
+
+        .downtext {
+            color: #DBDBDB;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            font-size: medium;
+            text-shadow: 2px 2px rgba(159, 158, 158, 0.388);
+
+            h1 {
+                margin-top: 20px;
+            }
+
+            h2 {
+
+                width: 350px;
+                text-align: center;
+            }
+        }
+
+
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            #langBtn {
+                background-color: #BC542F;
+                color: white;
+                border: 0;
+                padding: 10px;
+                width: 180px;
+                border-radius: 10px;
+                text-transform: uppercase;
+                transition: 0.3s;
+                cursor: pointer;
+
+
+
+                &:hover {
+                    background-color: #e86c3f;
+                    transition: 0.2s;
+                }
+            }
+
+
+
+
+        }
+
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+        }
+
+
+
+
+
+
+    }
 }

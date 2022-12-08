@@ -12,6 +12,57 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <a href="">
+                    <li>
+                        Home
+                        <i class="las la-arrow-right"></i>
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        Event
+                        <i class="las la-arrow-right"></i>
+                    </li>
+                </a>
+            </ul>
+            <a href="">
+                <div class="logo"></div>
+            </a>
+            <ul class="nav-links nav-two">
+                <a href="">
+                    <li>
+                        Gallery
+                        <i class="las la-arrow-right"></i>
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        Sign Up
+                        <i class="las la-arrow-right"></i>
+                    </li>
+                </a>
+            </ul>
+            <div class="language-selector">
+                <i class="las la-globe"></i>
+                <div class="lang-flag">
+                    <a href="">
+                        <img src="img/eng.png" alt="English Flag">
+                    </a>
+                    <a href="">
+                        <img src="img/dansk.png" alt="Danish Flag">
+                    </a>
+                </div>
+            </div>
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
     <div class="text">
         <div class="comp">
             <div class="back1">
@@ -48,9 +99,18 @@
                 <label for="Team Name"></label>
                 <input type="Team Name" id="Team Name" placeholder="Team Name">
                 <br><br>
-                <label for="Number of members"></label>
-                <input type="Number of members" id="Number" placeholder="Number of members (1-5)">
-                <input type="Submit" value="Sign up" id="sendBtn">
+                <div class="inner-item-dropmenu">
+                    <select name="Number of members" id="teams">
+                        <option value="">Number of members</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                    <input type="Submit" value="Sign up" id="sendBtn">
+                </div>
+
 
             </form>
         </div>
@@ -72,9 +132,17 @@
                 <label for="Team Name"></label>
                 <input type="Team Name" id="Team Name" placeholder="Team Name">
                 <br><br>
-                <label for="Number of members"></label>
-                <input type="Number of members" id="Number" placeholder="Number of members (1-5)">
-                <input type="Submit" value="Sign up" id="sendBtn">
+                <div class="inner-item-dropmenu">
+                    <select name="Number of members" id="teams">
+                        <option value="">Number of members</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                    <input type="Submit" value="Sign up" id="sendBtn">
+                </div>
 
 
 
@@ -87,6 +155,7 @@
             © LONGHORN
         </p>
     </div>
+    <script src="/js/java.js"></script>
 </body>
 
 </html>
