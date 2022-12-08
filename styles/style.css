@@ -16,20 +16,18 @@
   outline: none;
 }
 
-.main-container {
+.container {
   display: flex;
-  height: 60px;
-  border-top: 3px solid var(--main-color);
-  border-bottom: 3px solid var(--main-color);
-  padding-top: 10px;
+  justify-content: center;
+  border-top: 2px solid var(--main-color);
 }
 
 .upper-container {
-  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--main-color);
+  border-right: 2px solid var(--main-color);
 }
 .upper-container .h1 {
   font-size: 700;
@@ -47,57 +45,66 @@
 }
 .nav .nav-tabs .nav-link.active {
   background: var(--main-color);
-  color: #fff;
+  color: var(--white);
   border: 3px solid var(--main-color);
 }
 .nav .nav-tabs .nav-link {
-  background-color: #fff;
-  color: #9400d3;
-  border: 3px solid #9400d3;
+  background: var(--white);
+  color: var(--main-color);
+  border: 3px solid var(--main-color);
   margin-right: 2rem;
   padding-left: 3rem;
   padding-right: 3rem;
 }
 .nav .nav-tabs .nav-link:hover {
-  border: 3px solid #9400d3;
+  border: 3px solid var(--main-color);
 }
 .nav .nav-tabs {
-  border-bottom: 1px solid #9400d3;
+  border-bottom: none !important;
 }
 
 .container1 {
-  width: 40%;
+  width: 35%;
+  border-right: 2px solid var(--main-color);
+  margin: 20px 0;
+  padding: 40px;
+  min-height: 400px;
 }
 
-/* .dimension {
-    width: 500px;
-    height: 300px;
+.inner-box {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0 50px 0;
+  border: 2px solid var(--main-dark);
 }
 
-.nav-tabs .nav-link.active {
-    background-color: #9400d3;
-    color: #fff;
-    border: 3px solid #9400d3;
+.box1 {
+  padding-right: 60px;
+  border-right: 1px solid var(--main-dark);
 }
 
-.nav-tabs .nav-link {
-    background-color: #fff;
-    color: #9400d3;
-    border: 3px solid #9400d3;
-    margin-right: 2rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+.lower-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.nav-tabs .nav-link:hover {
-    border: 3px solid #9400d3;
+.btn {
+  width: 150px;
+  height: 30px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  background: var(--main-color) !important;
+  color: var(--white) !important;
 }
 
-.nav-tabs {
-    border-bottom: 1px solid #9400d3;
-}
-
-.tab-content {
+/* .tab-content {
     border: 1px solid #9400d3;
     padding: 20px;
+}
+
+.tab-pane .active {
+    display: flex;
+    justify-content: flex-end;
 } *//*# sourceMappingURL=style.css.map */
