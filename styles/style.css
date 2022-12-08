@@ -1,7 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Rye&display=swap");
 :root {
-  --main-color: #624465;
+  --main-color: rgb(213, 82, 59);
   --main-dark: #252439;
-  --main-yellow: #ffdd67;
   --sec-dark: #302f43;
   --white: #ffffff;
   --text-grey: rgba(0,0,0,.5);
@@ -14,158 +14,90 @@
   list-style-type: none;
   text-decoration: none;
   outline: none;
-  /*font-family: ;*/
 }
 
-html {
-  scroll-behavior: smooth;
+.main-container {
+  display: flex;
+  height: 60px;
+  border-top: 3px solid var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+  padding-top: 10px;
 }
 
-/* 39:40  header {
-    position: absolute;
-    top: 1rem;
-    z-index: 10;
-    display: flex;
-    padding: 1rem 2rem;
-    background: var(--main-dark) ;
-    display: flex;
-}*/
-.container {
-  margin: auto;
-  width: 75%;
-}
-
-section {
-  padding: 5rem 0rem;
-}
-
-section.about {
-  background: var(--main-color);
-}
-
-.about-wrapper {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 40% 60%;
-  grid-gap: 9rem;
-}
-
-.exp-num {
+.upper-container {
+  width: 40%;
   display: flex;
   justify-content: center;
-}
-
-.exp-num > div {
-  background: var(--main-yellow);
-  width: auto;
-  display: inline-block;
-}
-
-.exp-num h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 25rem;
-  line-height: 25rem;
+  align-items: center;
   color: var(--main-color);
-  position: relative;
-  top: -20px;
+}
+.upper-container .h1 {
+  font-size: 700;
 }
 
-/*1:14*/
-.area {
-  background: var(--main-dark);
-}
-
-.about-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 6.5rem;
-}
-
-area-desc h2 {
-  color: #fff;
-  margin-bottom: 2.5rem;
-}
-
-.area-details input[type=radio] {
-  display: none;
-}
-
-.area-desc p {
-  line-height: 1.7rem;
-  color: var(--text-grey);
-  margin-bottom: 1rem;
-}
-
-.area-btns {
-  margin-top: 3rem;
-}
-
-.area-btns a {
-  background: var(--text-grey);
-}
-
-.area-btns a span {
-  display: inline-block;
-  margin-left: 0.3rem;
-  font-size: 1.4rem;
-}
-
-.area-labels {
+.nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin-left: 100px;
+  justify-content: center center;
+  font-weight: 600;
+  font-size: medium;
 }
-
-.area-labels label {
-  padding: 1rem 2rem;
+.nav .nav-tabs {
+  gap: 10px;
+}
+.nav .nav-tabs .nav-link.active {
+  background: var(--main-color);
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
-  cursor: pointer;
+  border: 3px solid var(--main-color);
+}
+.nav .nav-tabs .nav-link {
+  background-color: #fff;
+  color: #9400d3;
+  border: 3px solid #9400d3;
+  margin-right: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.nav .nav-tabs .nav-link:hover {
+  border: 3px solid #9400d3;
+}
+.nav .nav-tabs {
+  border-bottom: 1px solid #9400d3;
 }
 
-.area-labels label span {
-  transform: rotate(45deg);
-  display: inline-block;
-  margin-left: 0.5rem;
+.container1 {
+  width: 40%;
 }
 
-#skill:checked ~ .area-labels .skill-label {
-  border: 1px solid #fff;
-  border-radius: 15px;
+/* .dimension {
+    width: 500px;
+    height: 300px;
 }
 
-#experience:checked ~ .area-labels .exp-label {
-  border: 1px solid #fff;
-  border-radius: 15px;
+.nav-tabs .nav-link.active {
+    background-color: #9400d3;
+    color: #fff;
+    border: 3px solid #9400d3;
 }
 
-#education:checked ~ .area-labels .edu-label {
-  border: 1px solid #fff;
-  border-radius: 15px;
+.nav-tabs .nav-link {
+    background-color: #fff;
+    color: #9400d3;
+    border: 3px solid #9400d3;
+    margin-right: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
-.skill-area,
-.exp-area,
-.edu-area {
-  display: none;
+.nav-tabs .nav-link:hover {
+    border: 3px solid #9400d3;
 }
 
-#skill:checked ~ .area-info .skill-area {
-  display: grid;
+.nav-tabs {
+    border-bottom: 1px solid #9400d3;
 }
 
-#experience:checked ~ .area-info .exp-area {
-  display: block;
-}
-
-.skill-area {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2 rem;
-}/*# sourceMappingURL=style.css.map */
+.tab-content {
+    border: 1px solid #9400d3;
+    padding: 20px;
+} *//*# sourceMappingURL=style.css.map */
