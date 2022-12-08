@@ -90,7 +90,7 @@ area-desc h2{
     margin-bottom: 2.5rem;
 }
 
-.area-details input[type=checkbox] {
+.area-details input[type=radio] {
     display: none;
 }
 
@@ -129,6 +129,7 @@ area-desc h2{
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
+    cursor: pointer;
 }
 
 .area-labels label span {
@@ -151,3 +152,26 @@ area-desc h2{
     border: 1px solid #fff;
     border-radius: 15px;
 }
+
+.skill-area,
+.exp-area,
+.edu-area {
+    display: none;
+}
+
+#skill:checked ~ .area-info .skill-area {
+    display: grid;
+}
+
+#experience:checked ~ .area-info .exp-area {
+    display: block;
+}
+
+.skill-area{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2 rem
+}
+
+
+1:30
