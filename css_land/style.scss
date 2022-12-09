@@ -369,7 +369,9 @@ body {
         .kids {
             width: 50%;
             height: 100%;
-            border: 2px solid black;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -405,7 +407,7 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
-            border-right: 3px dotted black;
+            border-right: 2px dotted black;
 
 
 
@@ -525,14 +527,78 @@ body {
 
 
     }
-}
+
+    .downhorn {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: x-small;
+    }
 
 
-.downhorn {
-    width: 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: x-small;
+
+    /* mobile screen */
+
+    @media screen and (width < 1075px) {
+        .text {
+            flex-direction: column;
+            width: 100%;
+            margin-top: 115px;
+
+            .comp {
+                width: 100%;
+                height: auto;
+
+                .back1 {
+                    padding: 10px;
+                }
+            }
+
+            .kids {
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 670px;
+                right: 0;
+                height: auto;
+
+                .back2 {
+                    padding: 10px;
+                }
+            }
+        }
+
+
+        .list {
+            flex-direction: column;
+            border-bottom: none;
+
+            .first {
+                border-right: none;
+                width: 100%;
+                margin-top: 10px;
+
+            }
+
+            .second {
+                width: 100%;
+                margin-top: 130px;
+            }
+        }
+
+        .downhorn {
+
+            margin-top: 500px;
+            border-top: 2px solid black;
+        }
+    }
+
+    @media screen and (width < 500px) {
+
+        .text {
+            margin-top: 107px;
+        }
+    }
 }
