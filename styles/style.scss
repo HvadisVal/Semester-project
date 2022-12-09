@@ -9,7 +9,6 @@
     --main-dark: #873e2a;
 }
 
-
 * {
     padding: 0;
     margin: 0;
@@ -19,6 +18,7 @@
     outline: none;
 }
 
+/* ---here starts the main content */
 .container {
     display: flex;
     justify-content: center;
@@ -148,3 +148,4 @@
     display: flex;
     justify-content: center;
 }
+
