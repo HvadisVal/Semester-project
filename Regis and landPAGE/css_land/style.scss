@@ -21,6 +21,10 @@ $main-dark: #873e2a;
     padding: 0;
 }
 
+body {
+    background-color: $neutral-light;
+    overflow-x: hidden;
+}
 
 /*----------Header Starts Here----------*/
 header {
@@ -198,9 +202,10 @@ header {
                             font-weight: 600;
 
                             i {
+                                color: $main-color;
                                 transform: translateX(35px);
                                 opacity: 1;
-                            }
+                              }
                         }
 
                         i {
@@ -460,7 +465,7 @@ body {
                     border: 2px solid black;
                     color: grey;
                     font-size: large;
-                    padding: 5px;
+                    padding: 10px;
 
                 }
 
@@ -525,7 +530,7 @@ body {
                 border: 2px solid black;
                 color: grey;
                 font-size: large;
-                padding: 5px;
+                padding: 10px;
 
             }
 
@@ -575,7 +580,7 @@ body {
                 width: 100%;
                 position: absolute;
                 left: 0;
-                top: 670px;
+                top: 700px;
                 right: 0;
                 height: auto;
 
@@ -603,14 +608,121 @@ body {
 
             .second {
                 width: 100%;
-                margin-top: 130px;
+                margin-top: 170px;
             }
         }
 
         .downhorn {
 
-            margin-top: 500px;
+            margin-top: 570px;
             border-top: 2px solid black;
+        }
+    }
+
+    @media screen and (width < 780px) {
+
+        .text {
+            .comp {
+                .back1 {
+                    p{
+                        font-size: 1.5rem;
+                    }
+    
+                }
+            }
+
+            .kids {
+                top: 690px;
+                .back2 {
+                    p{
+                        font-size: 1.5rem;
+                    }
+    
+                }
+            }
+        }
+
+        .list {
+            .first {
+                margin: 0;
+
+                form {
+                    width: 300px;
+                    input,
+                    textarea {
+                        width: 300px;
+                        font-size: 1rem;
+                        padding: 10px;
+                    }
+    
+                    #sendBtn {
+                        font-size: 16px;
+                        width: 110px;
+                        padding: 12px;
+                        border-radius: 7px;
+                        margin: auto 0 auto 25px;
+                    }
+    
+                    .inner-item-dropmenu {
+                        width: 300px;
+                        display: flex;
+                        justify-content: start;
+                        align-items: flex-start;
+                    }
+    
+                    select {
+                        width: 165px;
+                        height: 48px;
+                        border: 2px solid black;
+                        color: grey;
+                        font-size: 16px;
+                        padding: 10px;
+                    }
+                }
+            }
+
+            .second {
+                margin-top: 160px;
+
+                form {
+                    width: 300px;
+                    input,
+                    textarea {
+                        width: 300px;
+                        font-size: 1rem;
+                        padding: 10px;
+                    }
+    
+                    #sendBtn {
+                        font-size: 16px;
+                        width: 110px;
+                        padding: 12px;
+                        border-radius: 7px;
+                        margin: auto 0 auto 25px;
+                    }
+    
+                    .inner-item-dropmenu {
+                        width: 300px;
+                        display: flex;
+                        justify-content: start;
+                        align-items: flex-start;
+                    }
+    
+                    select {
+                        width: 165px;
+                        height: 48px;
+                        border: 2px solid black;
+                        color: grey;
+                        font-size: 16px;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+
+        .downhorn {
+            margin-top: 550px;
+            font-size: 10px;
         }
     }
 
@@ -618,6 +730,80 @@ body {
 
         .text {
             margin-top: 107px;
+        }
+    }
+
+    @media screen and (width < 400px) {
+        .list {
+            .first {
+                form {
+                    width: 250px;
+
+                    input,
+                    textarea {
+                        width: 250px;
+                        font-size: 14px;
+                        padding: 8px;
+                    }
+    
+                    #sendBtn {
+                        font-size: 14px;
+                        width: 125px;
+                        padding: 8px;
+                        margin-top: 20px;
+                        margin-left: 0;
+                    }
+    
+                    .inner-item-dropmenu {
+                        width: 250px;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+    
+                    select {
+                        width: 250px;
+                        height: 41px;
+                        font-size: 14px;
+                        padding: 8px;
+                    }
+                }
+            }
+
+            .second {
+                form {
+                    width: 250px;
+
+                    input,
+                    textarea {
+                        width: 250px;
+                        font-size: 14px;
+                        padding: 8px;
+                    }
+    
+                    #sendBtn {
+                        font-size: 14px;
+                        width: 125px;
+                        padding: 8px;
+                        margin-top: 20px;
+                        margin-left: 0;
+                    }
+    
+                    .inner-item-dropmenu {
+                        width: 250px;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+    
+                    select {
+                        width: 250px;
+                        height: 41px;
+                        font-size: 14px;
+                        padding: 8px;
+                    }
+                }
+            }
         }
     }
 }
