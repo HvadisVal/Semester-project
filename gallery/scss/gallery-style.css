@@ -310,7 +310,7 @@ header nav .language-selector .lang-flag-active {
     right: 1.25rem;
   }
 }
-@media (width < 340px) {
+@media (width < 400px) {
   header nav .nav-links {
     width: 100%;
   }
