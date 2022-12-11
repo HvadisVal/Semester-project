@@ -280,6 +280,10 @@ body .text .comp {
   align-items: center;
   justify-content: center;
 }
+body .text .comp.blur-active {
+  filter: blur(2.5px);
+  transition: all 0.2s ease-out;
+}
 body .text .comp .back1 {
   width: 100%;
   height: 85%;
