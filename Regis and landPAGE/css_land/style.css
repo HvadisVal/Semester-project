@@ -38,12 +38,12 @@ header nav .nav-links li {
   width: 7.75rem;
   padding: 0.25rem 0;
   text-align: center;
-  background-color: #752F2D;
+  background-color: #bc542f;
   color: #F9F6F6;
   font-size: 1.25rem;
   font-weight: 500;
   text-transform: uppercase;
-  border: 2px solid #521B00;
+  border: 2px solid #873e2a;
   border-radius: 7px;
   letter-spacing: 1px;
   transition: all 0.1s ease-out;
@@ -145,20 +145,18 @@ header nav .language-selector .lang-flag-active {
     padding: 2rem 2rem 1.5rem 2rem;
     gap: 1.5rem;
     box-shadow: 5px 0px 10px -5px #322b28;
-    background-color: #752F2D;
+    background-color: #F9F6F6;
     transform: translateY(-500%);
     opacity: 0;
     transition: transform 0.2s ease-out, opacity 0.2s 0.1s ease-out;
   }
   header nav .nav-links li {
-    background-color: #F9F6F6;
-    border: 2px solid #322b28;
-    color: #322b28;
+    background-color: #bc542f;
+    border: 2px solid #873e2a;
+    color: #F9F6F6;
   }
   header nav .nav-links li:hover {
-    background-color: #F9F6F6;
-    border: 2px solid #322b28;
-    color: #752F2D;
+    border: 2px solid #F9F6F6;
     font-weight: 600;
   }
   header nav .nav-links li:hover i {
@@ -212,7 +210,7 @@ header nav .language-selector .lang-flag-active {
   }
   header nav .burger-active div:first-child {
     transform: rotate(-45deg) translate(-5px, 6px);
-    background-color: #752F2D;
+    background-color: #bc542f;
   }
   header nav .burger-active div:nth-child(2) {
     transform: translateX(-10px);
@@ -220,7 +218,7 @@ header nav .language-selector .lang-flag-active {
   }
   header nav .burger-active div:last-child {
     transform: rotate(45deg) translate(-5px, -6px);
-    background-color: #752F2D;
+    background-color: #bc542f;
   }
 }
 @media (width < 500px) {
@@ -279,12 +277,16 @@ body .text .comp {
 body .text .comp .back1 {
   width: 100%;
   height: 85%;
-  background-color: rgb(228, 227, 227);
+  background-color: #bc542f;
+  color: #E4E4E4;
   margin: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
+}
+body .text .comp .back1 i {
+  font-size: 24px;
 }
 body .text .kids {
   width: 50%;
@@ -299,12 +301,16 @@ body .text .kids {
 body .text .kids .back2 {
   width: 100%;
   height: 85%;
-  background-color: rgb(228, 227, 227);
+  background-color: #bc542f;
+  color: #E4E4E4;
   margin: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
+}
+body .text .kids .back2 i {
+  font-size: 24px;
 }
 body .list {
   display: flex;
@@ -331,19 +337,19 @@ body .list .first form #Number {
   width: 210px;
 }
 body .list .first form #sendBtn {
-  background-color: #752F2D;
+  background-color: #bc542f;
   margin-left: 50px;
   color: white;
   border: 0;
   padding: 10px;
   width: 150px;
-  border-radius: 5%;
+  border-radius: 7px;
   text-transform: uppercase;
   transition: 0.3s;
   cursor: pointer;
 }
 body .list .first form #sendBtn:hover {
-  background-color: #ce5854;
+  background-color: #e86c3f;
 }
 body .list .first form .inner-item-dropmenu {
   width: 400px;
@@ -356,6 +362,8 @@ body .list .first form select {
   height: 45px;
   border: 2px solid black;
   color: grey;
+  font-size: large;
+  padding: 5px;
 }
 body .second {
   width: 50%;
@@ -375,19 +383,19 @@ body .second form #Number {
   width: 210px;
 }
 body .second form #sendBtn {
-  background-color: #752F2D;
+  background-color: #bc542f;
   margin-left: 50px;
   color: white;
   border: 0;
   padding: 10px;
   width: 150px;
-  border-radius: 5%;
+  border-radius: 7px;
   text-transform: uppercase;
   transition: 0.3s;
   cursor: pointer;
 }
 body .second form #sendBtn:hover {
-  background-color: #ce5854;
+  background-color: #e86c3f;
 }
 body .second form .inner-item-dropmenu {
   width: 400px;
@@ -400,6 +408,8 @@ body .second form select {
   height: 45px;
   border: 2px solid black;
   color: grey;
+  font-size: large;
+  padding: 5px;
 }
 body .downhorn {
   width: 100%;
@@ -407,7 +417,12 @@ body .downhorn {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: x-small;
+  font-size: small;
+}
+@media screen and (width < 1300px) {
+  body .text {
+    margin-top: 115px;
+  }
 }
 @media screen and (width < 1075px) {
   body .text {
@@ -422,6 +437,9 @@ body .downhorn {
   body .text .comp .back1 {
     padding: 10px;
   }
+  body .text .comp .back1 i {
+    font-size: 16px;
+  }
   body .text .kids {
     width: 100%;
     position: absolute;
@@ -432,6 +450,9 @@ body .downhorn {
   }
   body .text .kids .back2 {
     padding: 10px;
+  }
+  body .text .kids .back2 i {
+    font-size: 16px;
   }
   body .list {
     flex-direction: column;

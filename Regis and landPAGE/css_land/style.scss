@@ -7,8 +7,9 @@
 $neutral-dark: #322b28;
 $neutral-light: #F9F6F6;
 $neutral-normal: #E4E4E4;
-$main-color: #752F2D;
-$main-dark: #521B00;
+$main-color: #bc542f;
+$main-light: #e86c3f;
+$main-dark: #873e2a;
 
 * {
     font-family: 'Oswald', sans-serif;
@@ -182,20 +183,18 @@ header {
                     padding: 2rem 2rem 1.5rem 2rem;
                     gap: 1.5rem;
                     box-shadow: 5px 0px 10px -5px $neutral-dark;
-                    background-color: $main-color;
+                    background-color: $neutral-light;
                     transform: translateY(-500%);
                     opacity: 0;
                     transition: transform .2s ease-out, opacity .2s .1s ease-out;
 
                     li {
-                        background-color: $neutral-light;
-                        border: 2px solid $neutral-dark;
-                        color: $neutral-dark;
+                        background-color: $main-color;
+                        border: 2px solid $main-dark;
+                        color: $neutral-light;
 
                         &:hover {
-                            background-color: $neutral-light;
-                            border: 2px solid $neutral-dark;
-                            color: $main-color;
+                            border: 2px solid $neutral-light;
                             font-weight: 600;
 
                             i {
@@ -323,12 +322,6 @@ body {
     height: 100%;
     width: 100%;
 
-
-
-
-
-
-
     .text {
         margin-top: 150px;
         display: flex;
@@ -354,13 +347,17 @@ body {
             .back1 {
                 width: 100%;
                 height: 85%;
-                background-color: rgb(228, 227, 227);
+                background-color: $main-color;
+                color: $neutral-normal;
                 margin: 5px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 20px;
 
+                i {
+                    font-size: 24px;
+                }
 
             }
 
@@ -380,12 +377,17 @@ body {
             .back2 {
                 width: 100%;
                 height: 85%;
-                background-color: rgb(228, 227, 227);
+                background-color: $main-color;
+                color: $neutral-normal;
                 margin: 5px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 20px;
+
+                i {
+                    font-size: 24px;
+                }
             }
 
 
@@ -429,19 +431,19 @@ body {
                 }
 
                 #sendBtn {
-                    background-color: #752F2D;
+                    background-color: $main-color;
                     margin-left: 50px;
                     color: white;
                     border: 0;
                     padding: 10px;
                     width: 150px;
-                    border-radius: 5%;
+                    border-radius: 7px;
                     text-transform: uppercase;
                     transition: 0.3s;
                     cursor: pointer;
 
                     &:hover {
-                        background-color: #ce5854;
+                        background-color: $main-light;
                     }
                 }
 
@@ -457,6 +459,8 @@ body {
                     height: 45px;
                     border: 2px solid black;
                     color: grey;
+                    font-size: large;
+                    padding: 5px;
 
                 }
 
@@ -492,19 +496,19 @@ body {
             }
 
             #sendBtn {
-                background-color: #752F2D;
+                background-color: $main-color;
                 margin-left: 50px;
                 color: white;
                 border: 0;
                 padding: 10px;
                 width: 150px;
-                border-radius: 5%;
+                border-radius: 7px;
                 text-transform: uppercase;
                 transition: 0.3s;
                 cursor: pointer;
 
                 &:hover {
-                    background-color: #ce5854;
+                    background-color: $main-light;
                 }
             }
 
@@ -520,6 +524,8 @@ body {
                 height: 45px;
                 border: 2px solid black;
                 color: grey;
+                font-size: large;
+                padding: 5px;
 
             }
 
@@ -534,12 +540,17 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: x-small;
+        font-size: small;
     }
 
 
 
     /* mobile screen */
+    @media screen and (width < 1300px) {
+        .text {
+            margin-top: 115px;
+        }
+    }
 
     @media screen and (width < 1075px) {
         .text {
@@ -553,6 +564,10 @@ body {
 
                 .back1 {
                     padding: 10px;
+
+                    i {
+                        font-size: 16px;
+                    }
                 }
             }
 
@@ -566,6 +581,10 @@ body {
 
                 .back2 {
                     padding: 10px;
+
+                    i {
+                        font-size: 16px;
+                    }
                 }
             }
         }
