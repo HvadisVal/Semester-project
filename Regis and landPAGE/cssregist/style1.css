@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Rye&display=swap");
 body {
   margin: 0;
   padding: 0;
   background-image: url("../img/bbqqqq.png");
+  background-attachment: fixed;
   background-size: cover;
   display: block;
+  font-family: "Oswald", sans-serif;
+  overflow-x: hidden;
 }
 body .logot {
   margin-top: 220px;
@@ -59,7 +63,7 @@ body .language-selector .lang-flag-active {
   opacity: 1;
 }
 body .downtext {
-  color: #DBDBDB;
+  color: #F9F6F6;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,6 +72,7 @@ body .downtext {
   padding: 0;
   font-size: large;
   text-shadow: 3px 2px rgba(159, 158, 158, 0.388);
+  font-family: "Rye", cursive;
 }
 body .downtext h1 {
   margin-top: 30px;
@@ -93,6 +98,8 @@ body form #langBtn {
   text-transform: uppercase;
   transition: 0.3s;
   cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
 }
 body form #langBtn:hover {
   background-color: #e86c3f;
@@ -100,7 +107,6 @@ body form #langBtn:hover {
 }
 @media screen and (width < 1075px) {
   body {
-    background-attachment: fixed;
     background-position: center;
   }
   body .logot {
@@ -156,5 +162,23 @@ body form #langBtn:hover {
     position: absolute;
     top: 20px;
     right: 30px;
+  }
+}
+@media screen and (width < 800px) {
+  body .language-selector i {
+    cursor: pointer;
+    font-size: 32px;
+  }
+}
+@media screen and (width < 370px) {
+  body .downtext h1 {
+    font-size: 26px;
+  }
+  body .downtext h2 {
+    font-size: 18px;
+  }
+  body form #langBtn {
+    padding: 8px;
+    width: 170px;
   }
 }/*# sourceMappingURL=style1.css.map */
