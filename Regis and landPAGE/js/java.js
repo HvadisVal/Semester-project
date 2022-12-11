@@ -4,6 +4,9 @@ const navSlide = () => {
     const navTwo = document.querySelector('.nav-two');
     const worldIcon = document.querySelector('.language-selector');
     const languages = document.querySelector('.lang-flag');
+    const kidsBlur = document.querySelector('.kids');
+    const formBlur = document.querySelector('.list');
+    const footerBlur = document.querySelector('.downhorn');
 
     //Toggle Navs
     burger.addEventListener('click', () => {
@@ -12,6 +15,11 @@ const navSlide = () => {
 
         //Burger Animation
         burger.classList.toggle('burger-active');
+
+        //Background Blur
+        kidsBlur.classList.toggle('blur-active');
+        formBlur.classList.toggle('blur-active');
+        footerBlur.classList.toggle('blur-active');
     });
 
     //Toggle Flags

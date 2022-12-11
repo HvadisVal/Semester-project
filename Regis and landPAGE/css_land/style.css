@@ -304,6 +304,10 @@ body .text .kids {
   align-items: center;
   justify-content: center;
 }
+body .text .kids.blur-active {
+  filter: blur(2.5px);
+  transition: all 0.2s ease-out;
+}
 body .text .kids .back2 {
   width: 100%;
   height: 85%;
@@ -323,6 +327,10 @@ body .list {
   height: 500px;
   width: 100%;
   border-bottom: 2px solid black;
+}
+body .list.blur-active {
+  filter: blur(2.5px);
+  transition: all 0.2s ease-out;
 }
 body .list .first {
   width: 50%;
@@ -424,6 +432,10 @@ body .downhorn {
   align-items: center;
   justify-content: center;
   font-size: small;
+}
+body .downhorn.blur-active {
+  filter: blur(2.5px);
+  transition: all 0.2s ease-out;
 }
 @media screen and (width < 1300px) {
   body .text {
