@@ -370,7 +370,7 @@ body .list .first form .inner-item-dropmenu {
 }
 body .list .first form select {
   width: 200px;
-  height: 45px;
+  height: 50px;
   border: 2px solid black;
   color: grey;
   font-size: large;
@@ -416,7 +416,7 @@ body .second form .inner-item-dropmenu {
 }
 body .second form select {
   width: 200px;
-  height: 45px;
+  height: 50px;
   border: 2px solid black;
   color: grey;
   font-size: large;
