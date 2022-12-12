@@ -16,6 +16,7 @@ html {
   scroll-behavior: smooth;
   background-color: #F9F6F6;
   color: #322b28;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -92,7 +93,7 @@ header {
   left: 0;
   top: 0;
   right: 0;
-  padding: 25px 8.75rem;
+  padding: 10px 8.75rem;
   z-index: 10;
   background-color: #F9F6F6;
   box-shadow: 0 5px 10px -10px #322b28;
@@ -134,11 +135,8 @@ header nav .nav-links a {
   cursor: pointer;
 }
 header nav .logo {
-  width: 100px;
-  height: 100px;
-  background-color: #322b28;
-  margin: 0 3.75rem;
-  border-radius: 60rem;
+  height: 125px;
+  margin: 0 3.5rem;
 }
 header nav .language-selector {
   position: absolute;
@@ -176,7 +174,7 @@ header nav .language-selector .lang-flag-active {
 }
 @media (width < 1300px) {
   header {
-    padding: 1.25rem 8.75rem;
+    padding: 10px 8.75rem;
   }
   header nav .nav-links {
     gap: 2.5rem;
@@ -186,9 +184,8 @@ header nav .language-selector .lang-flag-active {
     font-size: 1rem;
   }
   header nav .logo {
-    width: 75px;
-    height: 75px;
-    margin: 0 2.5rem;
+    height: 90px;
+    margin: 0 2.75rem;
   }
   header nav .language-selector {
     font-size: 2rem;
@@ -200,7 +197,7 @@ header nav .language-selector .lang-flag-active {
 }
 @media (width < 1075px) {
   header {
-    padding: 1.25rem 2.5rem;
+    padding: 10px 2.5rem;
     box-shadow: 0px 0px 15px -7px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 0px 15px -7px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 15px -7px rgba(0, 0, 0, 0.75);
@@ -293,9 +290,9 @@ header nav .language-selector .lang-flag-active {
     background-color: #bc542f;
   }
 }
-@media (width < 500px) {
+@media (width < 550px) {
   header {
-    padding: 1rem 1.25rem;
+    padding: 10px 1.25rem;
   }
   header nav {
     justify-content: space-between;
@@ -311,6 +308,11 @@ header nav .language-selector .lang-flag-active {
   }
   header nav .burger {
     right: 1.25rem;
+  }
+}
+@media (width < 540px) {
+  header nav .logo {
+    height: 80px;
   }
 }
 @media (width < 400px) {
@@ -573,9 +575,9 @@ footer .logo {
   position: absolute;
   left: 1.5rem;
   top: 20%;
-  width: 75px;
-  height: 150px;
-  background-color: #322b28;
+}
+footer .logo img {
+  height: 140px;
 }
 footer .connect-container {
   width: 90%;
@@ -634,6 +636,12 @@ footer .contact-container .contact p {
     flex-direction: column;
     gap: 0.25rem;
   }
+  footer .logo {
+    left: 1rem;
+  }
+  footer .logo img {
+    height: 125px;
+  }
 }
 @media (width < 1075px) {
   footer .connect-container {
@@ -654,6 +662,12 @@ footer .contact-container .contact p {
   footer .contact-container .contact {
     gap: 0.125rem;
     justify-content: center;
+  }
+  footer .logo {
+    top: 32.5%;
+  }
+  footer .logo img {
+    height: 115px;
   }
 }
 @media (width < 780px) {
@@ -678,8 +692,7 @@ footer .contact-container .contact p {
   footer .logo {
     position: absolute;
     left: 1rem;
-    top: 40%;
-    width: 50px;
+    top: 35%;
     height: 100px;
   }
   footer .copyright {
@@ -693,13 +706,13 @@ footer .contact-container .contact p {
   footer .connect-container a:nth-child(2) i {
     padding: 0 0.75rem;
   }
+  footer .logo {
+    display: none;
+  }
 }
 @media (width < 360px) {
   footer {
     padding: 1.5rem 1.25rem 1rem 1.25rem;
-  }
-  footer .logo {
-    display: none;
   }
   footer .contact-container {
     margin-bottom: 1.75rem;
