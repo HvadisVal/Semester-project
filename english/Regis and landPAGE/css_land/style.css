@@ -568,7 +568,7 @@ body .list .second form textarea {
     font-size: 10px;
   }
 }
-@media screen and (width < 500px) {
+@media screen and (width < 540px) {
   body .text {
     margin-top: 107px;
   }
