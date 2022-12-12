@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Rye&display=swap');
 
+$main-color: #bc542f;
+$main-light: #e86c3f;
+
 body {
     margin: 0;
     padding: 0;
@@ -16,10 +19,11 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        img {
+            height: 175px;
+        }
     }
-
-
-
 
     p {
         display: flex;
@@ -113,11 +117,11 @@ body {
 
 
         #langBtn {
-            background-color: #BC542F;
+            background-color: $main-color;
             color: white;
             border: 0;
             padding: 10px;
-            width: 230px;
+            width: 200px;
             border-radius: 10px;
             text-transform: uppercase;
             transition: 0.3s;
@@ -128,7 +132,7 @@ body {
 
 
             &:hover {
-                background-color: #e86c3f;
+                background-color: $main-light;
                 transition: 0.2s;
             }
         }
@@ -141,13 +145,9 @@ body {
 
         .logot {
             margin-top: 200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
 
-
-            p {
-                font-size: small;
+            img {
+                height: 140px;
             }
         }
 
@@ -225,6 +225,12 @@ body {
     }
 
     @media screen and (width < 370px) {
+        .logot {
+            img {
+                height: 120px;
+            }
+        }
+
         .downtext {
             h1 {
                 font-size: 26px;
