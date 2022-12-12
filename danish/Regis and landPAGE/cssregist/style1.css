@@ -103,6 +103,8 @@ body form #langBtn {
   cursor: pointer;
   font-family: "Oswald", sans-serif;
   font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
 }
 body form #langBtn:hover {
   background-color: #e86c3f;
