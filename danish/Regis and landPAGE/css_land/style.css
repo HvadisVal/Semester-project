@@ -34,7 +34,7 @@ header nav .nav-links {
   gap: 3.75rem;
 }
 header nav .nav-links li {
-  width: 7.75rem;
+  width: 8.25rem;
   padding: 0.25rem 0;
   text-align: center;
   background-color: #bc542f;
@@ -103,7 +103,7 @@ header nav .language-selector .lang-flag-active {
     gap: 2.5rem;
   }
   header nav .nav-links li {
-    width: 6.25rem;
+    width: 6.75rem;
     font-size: 1rem;
   }
   header nav .logo {
@@ -291,6 +291,9 @@ body .text .comp .back1 {
 body .text .comp .back1 i {
   font-size: 24px;
 }
+body .text .comp .back1 p {
+  text-transform: uppercase;
+}
 body .text .kids {
   width: 50%;
   height: 100%;
@@ -318,6 +321,9 @@ body .text .kids .back2 {
 }
 body .text .kids .back2 i {
   font-size: 24px;
+}
+body .text .kids .back2 p {
+  text-transform: uppercase;
 }
 body .list {
   display: flex;

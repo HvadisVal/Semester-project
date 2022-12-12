@@ -41,7 +41,7 @@ header {
         gap: 3.75rem;
   
         li {
-          width: 7.75rem;
+          width: 8.25rem;
           padding: 0.25rem 0;
           text-align: center;
           background-color: $main-color;
@@ -126,7 +126,7 @@ header {
           
   
             li {
-              width: 6.25rem;
+              width: 6.75rem;
               font-size: 1rem;
             }
           }
@@ -361,6 +361,10 @@ body {
                     font-size: 24px;
                 }
 
+                p {
+                  text-transform: uppercase;
+                }
+
             }
 
         }
@@ -393,6 +397,10 @@ body {
 
                 i {
                     font-size: 24px;
+                }
+
+                p {
+                  text-transform: uppercase;
                 }
             }
 

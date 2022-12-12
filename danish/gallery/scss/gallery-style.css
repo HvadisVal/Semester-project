@@ -52,7 +52,7 @@ h3 {
 }
 
 .btn {
-  width: 150px;
+  width: 210px;
   padding: 0.375rem;
   background-color: #bc542f;
   color: #F9F6F6;
@@ -111,7 +111,7 @@ header nav .nav-links {
   gap: 3.75rem;
 }
 header nav .nav-links li {
-  width: 7.75rem;
+  width: 8.25rem;
   padding: 0.25rem 0;
   text-align: center;
   background-color: #bc542f;
@@ -180,7 +180,7 @@ header nav .language-selector .lang-flag-active {
     gap: 2.5rem;
   }
   header nav .nav-links li {
-    width: 6.25rem;
+    width: 6.75rem;
     font-size: 1rem;
   }
   header nav .logo {
@@ -490,7 +490,7 @@ main .content .slider .swiper .swiper-pagination-bullet-active {
     font-size: 1rem;
   }
   main .content .description .btn {
-    width: 120px;
+    width: 180px;
     font-size: 1rem;
   }
   main .content .slider {
