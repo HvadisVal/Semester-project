@@ -11,18 +11,12 @@
   padding: 0;
 }
 
-body {
-  background-color: #F9F6F6;
-  overflow-x: hidden;
-}
-
-/*----------Header Starts Here----------*/
 header {
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
-  padding: 25px 8.75rem;
+  padding: 10px 8.75rem;
   z-index: 10;
   background-color: #F9F6F6;
   box-shadow: 0 5px 10px -10px #322b28;
@@ -63,22 +57,15 @@ header nav .nav-links li i {
 header nav .nav-links a {
   cursor: pointer;
 }
-header nav .nav-two {
-  padding-left: 0;
-}
 header nav .logo {
-  width: 100px;
-  height: 100px;
-  background-color: #322b28;
-  margin: 0 3.75rem;
-  border-radius: 60rem;
+  height: 125px;
+  margin: 0 3.5rem;
 }
 header nav .language-selector {
   position: absolute;
   right: 8.75rem;
   font-size: 2.5rem;
   margin-bottom: 0.375rem;
-  color: #322b28;
 }
 header nav .language-selector i {
   cursor: pointer;
@@ -110,7 +97,7 @@ header nav .language-selector .lang-flag-active {
 }
 @media (width < 1300px) {
   header {
-    padding: 1.25rem 8.75rem;
+    padding: 10px 8.75rem;
   }
   header nav .nav-links {
     gap: 2.5rem;
@@ -120,9 +107,8 @@ header nav .language-selector .lang-flag-active {
     font-size: 1rem;
   }
   header nav .logo {
-    width: 75px;
-    height: 75px;
-    margin: 0 2.5rem;
+    height: 90px;
+    margin: 0 2.75rem;
   }
   header nav .language-selector {
     font-size: 2rem;
@@ -134,7 +120,7 @@ header nav .language-selector .lang-flag-active {
 }
 @media (width < 1075px) {
   header {
-    padding: 1.25rem 2.5rem;
+    padding: 10px 2.5rem;
     box-shadow: 0px 0px 15px -7px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 0px 15px -7px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 15px -7px rgba(0, 0, 0, 0.75);
@@ -227,9 +213,9 @@ header nav .language-selector .lang-flag-active {
     background-color: #bc542f;
   }
 }
-@media (width < 500px) {
+@media (width < 550px) {
   header {
-    padding: 1rem 1.25rem;
+    padding: 10px 1.25rem;
   }
   header nav {
     justify-content: space-between;
@@ -247,6 +233,11 @@ header nav .language-selector .lang-flag-active {
     right: 1.25rem;
   }
 }
+@media (width < 540px) {
+  header nav .logo {
+    height: 80px;
+  }
+}
 @media (width < 400px) {
   header nav .nav-links {
     width: 100%;
@@ -258,6 +249,8 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
+  background-color: #F9F6F6;
+  overflow-x: hidden;
   /* mobile screen */
 }
 body .text {
