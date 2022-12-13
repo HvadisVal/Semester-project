@@ -430,7 +430,7 @@ main .content .slider .swiper .swiper-button-prev::after {
   border-radius: 3px;
 }
 main .content .slider .swiper .swiper-pagination-bullet-active {
-  background-color: #bc542f;
+  background-color: #e86c3f;
 }
 @media (width < 1300px) {
   main {
