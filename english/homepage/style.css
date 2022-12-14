@@ -426,7 +426,6 @@ main .event .container:last-child .inner-container:last-child .box:last-child {
   -webkit-box-shadow: 0px -1px 15px -5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px -1px 15px -5px rgba(0, 0, 0, 0.75);
 }
-
 /*.row-1{
     display: flex;
     height: 443px;
