@@ -432,6 +432,7 @@ main {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5rem;
 
     .container {
       width: 50%;
@@ -439,7 +440,7 @@ main {
 
       &:first-child {
         margin: 0 5px 0 10px;
-        background-image: url('img/pexels-min-an-1482803.jpg');
+        background-image: url('img/meat1.jpg');
         background-size: cover;
         background-position: center;
         box-shadow: 0px -1px 15px -5px rgba(0,0,0,0.75);
@@ -465,7 +466,7 @@ main {
           
           &:first-child {
             margin-bottom: 5px;
-            background-image: url('img/pexels-min-an-1482803.jpg');
+            background-image: url('img/meat2.jpg');
             background-size: cover;
             background-position: center;
             box-shadow: 0px -1px 15px -5px rgba(0,0,0,0.75);
@@ -483,7 +484,7 @@ main {
               
               &:first-child {
                 margin-right: 5px;
-                background-image: url('img/pexels-min-an-1482803.jpg');
+                background-image: url('img/meta3.jpg');
                 background-size: cover;
                 background-position: center;
                 box-shadow: 0px -1px 15px -5px rgba(0,0,0,0.75);
@@ -493,7 +494,7 @@ main {
 
               &:last-child {
                 margin-left: 5px;
-                background-image: url('img/pexels-min-an-1482803.jpg');
+                background-image: url('img/meat4.jpg');
                 background-size: cover;
                 background-position: center;
                 box-shadow: 0px -1px 15px -5px rgba(0,0,0,0.75);
@@ -510,8 +511,56 @@ main {
     }
   }
 
-  .sponsor {
-    
+  .sponsors {
+    border-top: 2px solid $neutral-dark;
+
+    .header {
+      //Dark Header
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.875rem;
+      background-color: $neutral-dark;
+      padding: 23px;
+
+      //Orange Header
+      /*display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.875rem;
+      background-image: radial-gradient($main-dark, $main-color);
+      padding: 23px;
+      margin: 10px;*/
+
+      i {
+        font-size: 1.5rem;
+        color: $neutral-normal;
+      }
+    }
+
+    .sponsor-list {
+      padding: 3.5rem 12rem;
+      border-top: 2px solid $neutral-dark;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .sponsor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+          height: 75px;
+        }
+
+        p {
+          font-size: 1.375rem;
+          font-weight: 500;
+        }
+      }
+    }
   }
 }
 
