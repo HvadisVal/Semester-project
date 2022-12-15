@@ -427,10 +427,17 @@ main {
 
       p {
         width: 45rem;
-        margin: 5rem auto;
+        margin: 10rem auto;
         font-size: 1.25rem;
       }
     }
+  }
+
+  .new-logo {
+    position: absolute;
+    top: 19rem; right: -2rem;
+    height: 400px;
+    opacity: 0.5;
   }
 
   .event {
@@ -572,7 +579,10 @@ main {
       margin-top: 115px;
     }
 
-
+    .new-logo {
+      top: 17rem; right: -2rem;
+      height: 350px;
+    }
 
     .sponsors {
       .sponsor-list {
@@ -625,6 +635,11 @@ main {
       }
     }
 
+    .new-logo {
+      top: 28rem; right: -2rem;
+      height: 250px;
+    }
+
     .sponsors {
       .sponsor-list {
         flex-wrap: wrap;
@@ -652,10 +667,15 @@ main {
       .text {
         p {
           width: 30rem;
-          margin: 4rem auto;
+          margin: 7.5rem auto;
           font-size: 1rem;
         }
       }
+    }
+
+    .new-logo {
+      top: 25rem; right: -1rem;
+      height: 200px;
     }
 
     h1 {
@@ -715,11 +735,19 @@ main {
       }
     }
 
+    .new-logo {
+      display: none;
+    }
+
     .sponsors {
       .sponsor-list {
         .sponsor {
           width: 175px;
           gap: 0.5rem;
+
+          img {
+            height: 60px;
+          }
         }
       }
     }

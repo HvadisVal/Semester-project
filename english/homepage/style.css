@@ -362,8 +362,15 @@ main .about-us .text {
 }
 main .about-us .text p {
   width: 45rem;
-  margin: 5rem auto;
+  margin: 10rem auto;
   font-size: 1.25rem;
+}
+main .new-logo {
+  position: absolute;
+  top: 19rem;
+  right: -2rem;
+  height: 400px;
+  opacity: 0.5;
 }
 main .event {
   width: 100%;
@@ -478,6 +485,11 @@ main .sponsors .sponsor-list .sponsor p {
   main {
     margin-top: 115px;
   }
+  main .new-logo {
+    top: 17rem;
+    right: -2rem;
+    height: 350px;
+  }
   main .sponsors .sponsor-list {
     padding: 3.5rem 6rem;
   }
@@ -512,6 +524,11 @@ main .sponsors .sponsor-list .sponsor p {
   main .event .container:last-child .inner-container:last-child .box:last-child {
     margin-left: 5px;
   }
+  main .new-logo {
+    top: 28rem;
+    right: -2rem;
+    height: 250px;
+  }
   main .sponsors .sponsor-list {
     flex-wrap: wrap;
     justify-content: center;
@@ -531,8 +548,13 @@ main .sponsors .sponsor-list .sponsor p {
   }
   main .about-us .text p {
     width: 30rem;
-    margin: 4rem auto;
+    margin: 7.5rem auto;
     font-size: 1rem;
+  }
+  main .new-logo {
+    top: 25rem;
+    right: -1rem;
+    height: 200px;
   }
   main h1 {
     font-size: 2rem;
@@ -572,9 +594,15 @@ main .sponsors .sponsor-list .sponsor p {
   main .about-us .text p {
     width: 20rem;
   }
+  main .new-logo {
+    display: none;
+  }
   main .sponsors .sponsor-list .sponsor {
     width: 175px;
     gap: 0.5rem;
+  }
+  main .sponsors .sponsor-list .sponsor img {
+    height: 60px;
   }
 }
 @media (width < 550px) {
