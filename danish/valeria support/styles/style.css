@@ -342,6 +342,7 @@ header nav .language-selector .lang-flag-active {
   font-size: medium;
   margin-left: 0;
   gap: 100px;
+  margin-top: 6px;
   color: #F9F6F6;
 }
 
@@ -401,7 +402,8 @@ header nav .language-selector .lang-flag-active {
 
 .box7 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 2.5rem;
   margin-bottom: 40px;
 }
 .box7 a.btn {
@@ -409,6 +411,13 @@ header nav .language-selector .lang-flag-active {
   width: -moz-fit-content;
   width: fit-content;
   color: #F9F6F6 !important;
+}
+
+.table-one tr th {
+  min-width: 115px;
+}
+.table-one tr td {
+  min-width: 115px;
 }
 
 .table-two {

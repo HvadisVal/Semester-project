@@ -412,6 +412,7 @@ header {
     font-size: medium;
     margin-left: 0;
     gap: 100px;
+    margin-top: 6px;
     color: $neutral-light;
 }
 
@@ -471,12 +472,25 @@ header {
 
 .box7{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 2.5rem;
     margin-bottom: 40px;
      a.btn{
         width: fit-content;
         color: $neutral-light !important;
      }
+}
+
+.table-one {
+  tr {
+    th {
+      min-width: 115px;
+    }
+    td {
+       min-width: 115px;
+    }
+  }
+
 }
 
 .table-two {
