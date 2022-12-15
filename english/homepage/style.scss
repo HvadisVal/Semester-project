@@ -401,6 +401,11 @@ main {
   margin-top: 150px;
   border-top: 2px solid $neutral-dark;
 
+  &.blur-active {
+    filter: blur(2.5px);
+    transition: all .2s ease-out;
+  }
+
   .about-us {
     .header {
       display: flex;
