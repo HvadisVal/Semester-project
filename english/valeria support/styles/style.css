@@ -146,7 +146,7 @@ header nav .language-selector .lang-flag-active {
   }
   header nav .nav-links {
     position: absolute;
-    top: 7.2rem;
+    top: 6.9rem;
     right: 0;
     width: 20rem;
     flex-direction: column;
@@ -237,7 +237,7 @@ header nav .language-selector .lang-flag-active {
     justify-content: space-between;
   }
   header nav .nav-links {
-    top: 6.7rem;
+    top: 6.2rem;
   }
   header nav .nav-two {
     top: 14.95rem;
@@ -265,6 +265,10 @@ header nav .language-selector .lang-flag-active {
   display: flex;
   justify-content: center;
   margin-top: 145px;
+}
+.container.blur-active {
+  filter: blur(2.5px);
+  transition: all 0.2s ease-out;
 }
 
 .container1 {
